@@ -148,7 +148,7 @@ export default function Home() {
         if (canvas) {
             const response = await axios({
                 method: 'post',
-                url: `${import.meta.env.VITE_API_URL}/calculate`,
+                url: `http://127.0.0.1:8900/calculate`,
                 data: {
                     image: canvas.toDataURL('image/png'),
                     dict_of_vars: dictOfVars
